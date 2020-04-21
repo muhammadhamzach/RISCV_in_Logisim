@@ -1,0 +1,46 @@
+Instructions Implemented in RISCV Datapath Logisim
+Type R
+1- ADD
+2- SUB
+3- AND
+4- XOR
+5- OR
+6- SRA
+7- SLR
+8- SLL
+9- SLT
+10- SLTU
+
+Type I
+1- ADDI
+2- ANDI
+3- XORI
+4- ORI
+5- SRAI
+6- SLRI
+7- SLLI
+8- SLTI
+9- SLTIU
+10- LW
+11- LH
+12- LB
+13- LHU
+14- LBU
+
+Type S
+1- SW
+2- SB
+3- SH
+
+Other
+1- JALR
+2- AUIPC
+3- LUI
+4- JAL		(work with even number, if odd number is decremented by 1 to even)
+5- BEQ		(work with even number, if odd number is decremented by 1 to even)
+6- BNE		(work with even number, if odd number is decremented by 1 to even)
+7- BLT		(work with even number, if odd number is decremented by 1 to even)
+8- BLTU		(work with even number, if odd number is decremented by 1 to even)
+9- BGE		(work with even number, if odd number is decremented by 1 to even)
+10- BGEU	(work with even number, if odd number is decremented by 1 to even)
+

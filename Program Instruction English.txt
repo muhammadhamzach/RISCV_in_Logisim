@@ -1,0 +1,97 @@
+//load data from address 0-31 from memory into the 31 registers 0-31
+lw x1, 0(x0)
+lw x2, 1(x0)
+lw x3, 2(x0)
+lw x4, 3(x0)
+lw x5, 4(x0)
+lw x6, 5(x0)
+lw x7, 6(x0)
+lw x8, 7(x0)
+lw x9, 8(x0)
+lw x10, 9(x0)
+lw x11, 10(x0)
+lw x12, 11(x0)
+lw x13, 12(x0)
+lw x14, 13(x0)
+lw x15, 14(x0)
+lw x16, 15(x0)
+lw x17, 16(x0)
+lw x18, 17(x0)
+lw x19, 18(x0)
+lw x20, 19(x0)
+lw x21, 20(x0)
+lw x22, 21(x0)
+lw x23, 22(x0)
+lw x24, 23(x0)
+lw x25, 24(x0)
+lw x26, 25(x0)
+lw x27, 26(x0)
+lw x28, 27(x0)
+lw x29, 28(x0)
+lw x30, 29(x0)
+lw x31, 30(x0)
+//store data from registers 0-31 to adress 31-0 of memory (after this the data in memory will be flipped from the one loaded originally)
+sw x1, 30(x0)
+sw x2, 29(x0)
+sw x3, 28(x0)
+sw x4, 27(x0)
+sw x5, 26(x0)
+sw x6, 25(x0)
+sw x7, 24(x0)
+sw x8, 23(x0)
+sw x9, 22(x0)
+sw x10, 21(x0)
+sw x11, 20(x0)
+sw x12, 19(x0)
+sw x13, 18(x0)
+sw x14, 17(x0)
+sw x15, 16(x0)
+sw x16, 15(x0)
+sw x17, 14(x0)
+sw x18, 13(x0)
+sw x19, 12(x0)
+sw x20, 11(x0)
+sw x21, 10(x0)
+sw x22, 9(x0)
+sw x23, 8(x0)
+sw x24, 7(x0)
+sw x25, 6(x0)
+sw x26, 5(x0)
+sw x27, 4(x0)
+sw x28, 3(x0)
+sw x29, 2(x0)
+sw x30, 1(x0)
+sw x31, 0(x0)
+//Arithematic Operations in ALU and storing it in memory
+add x3, x1, x2				
+sw x3, 0(x0)				//Ans: 0(x0) = 3F
+sub x6, x4, x5
+sw x6, 1(x0)				//Ans: 1(x0) = 1
+addi x8, x7, 32
+sw x8, 2(x0)				//Ans: 2(x0) = 3A
+addi x10, x9, -32
+sw x10, 3(x0)				//Ans: 3(x0) = FFFFFFF8
+or x13, x11, x12
+sw x13, 4(x0)				//Ans: 4(x0) = 17
+ori x15, x14, 32
+sw x15, 5(x0)				//Ans: 5(x0) = 33
+and x18, x16, x17
+sw x18, 6(x0)				//Ans: 6(x0) = 10
+andi x20, x19, 32
+sw x20, 7(x0)				//Ans: 7(x0) = 0
+xor x23, x21, x22
+sw x23, 8(x0)				//Ans: 8(x0) = 7
+xori x25, x24, 32
+sw x25, 9(x0)				//Ans: 9(x0) = 29
+sll x27, x26, x13
+sw x27, 10(x0)				//Ans; 10(x0) = 3800000		
+slli x29, x28, 20
+sw x29, 11(x0)				//Ans: 11(x0) = 500000
+srl x31, x30, x13
+sw x27, 12(x0)				//Ans: 12(x0) = 3800000		
+srli x2, x1, 20
+sw x2, 13(x0)				//Ans: 13(x0) = 0
+sra x4,x3, x18
+sw x4, 14(x0)				//Ans: 14(x0) = 0
+srai x6, x5, 18
+sw x6, 15(x0)				//Ans: 15(x0) = 0
